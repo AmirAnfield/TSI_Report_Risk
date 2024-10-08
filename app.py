@@ -41,14 +41,15 @@ else:
 statuts_compte = ['Activé', 'Suspendu', 'Désactivé']
 statut_compte = st.selectbox("Statut du compte", statuts_compte)
 
-# Génération du texte final avec des sauts de ligne
+# Génération du texte final avec le format voulu
 if st.button("Générer le texte"):
     texte_final = f"""
     Autorité : {autorite_autre}\n
-    Typologie du document : {typologie}\n
-    Motif : {motif_autre}\n
-    Numéro du ticket : {numero_ticket}\n
-    Action sur le compte : {action_compte_autre}\n
+    Typologie du document : {typologie}
+    Motif : {motif_autre}
+    Numéro du ticket : {numero_ticket}
+    Action sur le compte : {action_compte_autre}
     Statut du compte : {statut_compte}
     """
-    st.text(texte_final)  # Utilisation de st.text() pour respecter les sauts de ligne
+    # Utilisation de st.write() pour un affichage compact
+    st.write(texte_final.replace("\n", ""))
