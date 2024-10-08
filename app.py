@@ -49,6 +49,4 @@ Motif : {motif_autre}
 Numéro du ticket : {numero_ticket}
 Action sur le compte : {action_compte_autre}
 Statut du compte : {statut_compte}"""
-    
-    # Utiliser st.markdown avec l'argument "unsafe_allow_html=True" pour éviter les sauts de ligne supplémentaires
-    st.markdown(texte_final)
+
