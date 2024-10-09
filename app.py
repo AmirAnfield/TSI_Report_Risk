@@ -15,7 +15,7 @@ typologies = ['Réquisition judiciaire', 'Droit de communication']
 typologie = st.selectbox("Typologie du document", typologies)
 
 # Étape 3 : Sélection du motif
-motifs = ['Enquête préliminaire', 'Droit de communication', 'Autres']
+motifs = ['Enquête préliminaire', 'Demande d\'information', 'Autres']  # Changement ici
 motif = st.selectbox("Motif", motifs)
 
 # Si "Autres" est sélectionné, proposer une entrée texte
